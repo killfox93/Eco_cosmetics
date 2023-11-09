@@ -1,0 +1,3 @@
+@function underlineWidth($p) {
+  @return (100vw - $p * 2)px
+}

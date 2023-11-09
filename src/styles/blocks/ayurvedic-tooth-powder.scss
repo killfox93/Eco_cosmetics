@@ -1,0 +1,142 @@
+.ayurvedic-tooth-powder {
+  @include onDesktop {
+    padding-inline-start: 50px;
+  }
+  &__content {
+    @include pageGrid;
+  }
+
+  &__title {
+    padding-inline: 20px;
+    margin-bottom: 20px;
+    grid-column: 1/-1;
+
+    @include onTablet {
+      padding-inline: 27px;
+      grid-column: 1/3;
+    }
+
+    @include onDesktop {
+      padding-inline: 0;
+      grid-column: 2/5;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 30px;
+    grid-column: 1/-1;
+
+    @include onTablet {
+      grid-column: 3/-1;
+    }
+
+    @include onDesktop {
+      grid-column: 7/-1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    margin: 42px 0;
+  }
+
+  &__item {
+    font-size: 14px;
+
+    @include onTablet {
+      font-size: 16px;
+    }
+
+    @include onDesktop {
+      font-size: 16px;
+    }
+  }
+
+  &__icon {
+    width: 182px;
+    height: 100%;
+    object-fit: cover;
+
+    &--mobile {
+      @include onTablet {
+        display: none;
+      }
+
+      @include onDesktop {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @include onTablet {
+        width: 398px;
+        display: block;
+      }
+
+      @include onDesktop {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @include onDesktop {
+        display: block;
+        padding-inline: 50px;
+        width: 480px;
+        grid-column: 7/-1;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        @include hover {
+          transform: scale(105%);
+        }
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: #344F10;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    text-decoration: none;
+
+    @include onDesktop {
+      padding-inline: 0;
+      grid-column: 2/3;
+      &:hover::after {
+        transform: scale(1);
+      }
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #344F10;
+      bottom: -10px;
+
+      transform: scale(0);
+      transition: all 0.3s;
+      transform-origin: center;
+    }
+  }
+}
+

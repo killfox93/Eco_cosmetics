@@ -1,0 +1,40 @@
+.rotate {
+  display: none;
+
+  @include onDesktop {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-inline: 15px;
+    grid-column: 1/2;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+
+  &--shop {
+    grid-row: 4/-1;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__text {
+    color: rgba(52, 79, 16, 0.50);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  &__line {
+    display: block;
+    background: rgba(52, 79, 16, 0.50);
+    width: 1px;
+    height: 100px;
+  }
+}

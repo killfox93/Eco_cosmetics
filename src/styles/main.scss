@@ -1,7 +1,22 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils/reset.scss";
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./utils/functions.scss";
 
-body {
-  background: $c-gray;
-}
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/rotate.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/icon-close.scss";
+@import "./blocks/main.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/about-our-brand.scss";
+@import "./blocks/shop.scss";
+@import "./blocks/product.scss";
+@import "./blocks/about-the-creators.scss";
+@import "./blocks/ayurvedic-tooth-powder.scss";
+@import "./blocks/about-products.scss";
+@import "./blocks/contact-us.scss";
+@import "./blocks/form.scss";
+@import "./blocks/footer.scss";

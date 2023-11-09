@@ -1,0 +1,54 @@
+@mixin onTablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 320px) {
+    @content
+  }
+}
+
+@mixin pageGrid {
+  display: grid;
+  column-gap: 20px;
+  --columns: 2;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include onTablet {
+    --columns: 6;
+    column-gap: 30px;
+  }
+
+  @include onDesktop {
+    --columns: 12;
+    column-gap: 20px;
+  }
+}
+
+@mixin hover {
+  @include onDesktop {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin onProblemTitle {
+  @media (min-width: 720px) and (max-width: 800px) {
+    @content
+  }
+}
+
+@mixin onProblemFooter {
+  @media (min-width: 1024px) and (max-width: 1120px) {
+    @content
+  }
+}

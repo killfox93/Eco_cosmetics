@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product cards</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top-icons">
+          <a class="header__top-icon header__top-icon--menu" href="#menu"></a>
+          <div class="header__top-bird">
+            <a class="header__top-icon header__top-icon--bird" href="#"></a>
+            <p class="header__top-text">witch of mountain winds</p>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html#shop" class="nav__link">Shop</a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#contact" class="nav__link">Contact</a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#about" class="nav__link">About</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__top-icon header__top-icon--bag" href="#"></a>
+        </div>
+      </div>
+    </header>
+
+    <aside class="menu" id="menu">
+      <div class="menu__top">
+        <div class="menu__top-container">
+          <a href="#" class="icon__close"></a>
+        </div>
+      </div>
+      <div class="menu__bottom">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Shop</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="main__content">
+        <section class="product">
+          <h2 class="product__title">Hydrophilic oil</h2>
+
+          <p class="product__price">160 UAH</p>
+
+          <img
+          src="./images/photos/shop-photo.png"
+          alt="hydrophilic-oil"
+          class="product__photo"
+          >
+
+          <button class="product__button">add to bag</button>
+
+          <p class="product__info"><span class="product__info-first-word">Ingredients:</span> cocosulfate, aloe hydrolate, sweet almond oil, wheat proteins, chamomile grass, lavender essential oil.</p>
+
+          <p class="product__info"><span class="product__info-first-word">Application:</span> foam the shampoo in your hands and apply foam on the hair or draw a block over wet hair, foam, massage, rinse, apply balm or conditioner.</p>
+        </section>
+
+        <section class="product">
+          <h2 class="product__title">Almond Shampoo with Lavender Oil</h2>
+
+          <p class="product__price product__price--shampoo">70 UAH</p>
+
+          <p class="product__weight">30 g</p>
+
+          <img
+          src="./images/photos/product-photo.png"
+          alt="Almond Shampoo with Lavender Oil"
+          class="product__photo"
+        >
+
+          <button class="product__button">add to bag</button>
+
+          <p class="product__info"><span class="product__info-first-word">Ingredients:</span> cocosulfate, aloe hydrolate, sweet almond oil, wheat proteins, chamomile grass, lavender essential oil.</p>
+
+          <p class="product__info"><span class="product__info-first-word">Application:</span> foam the shampoo in your hands and apply foam on the hair or draw a block over wet hair, foam, massage, rinse, apply balm or conditioner.</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

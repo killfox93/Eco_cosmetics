@@ -1,0 +1,18 @@
+.section-title {
+  color: #344F10;
+
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  @include onProblemTitle {
+    font-size: 22px;
+  }
+
+  @include onDesktop {
+    font-size: 36px;
+  }
+}
